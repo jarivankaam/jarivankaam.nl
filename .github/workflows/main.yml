@@ -1,19 +1,22 @@
+name: Git Pull on Server
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  run_pull:
+  deploy:
     runs-on: ubuntu-latest
     steps:
+      # Install sshpass
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass
 
-      - name: Debug SSH Connection
+      # Connect to server and execute commands
+      - name: Git Pull in jarivankaam.nl directory
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -v -T -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}
-
-      - name: List Files on Server
-        run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -T -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} "ls"
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -T -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }} << EOF
+          cd jarivankaam.nl
+          git pull
+          EOF
