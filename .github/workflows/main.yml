@@ -14,6 +14,6 @@ jobs:
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}
       - name: ls
-        run:
-          ls
+        run: ls
+
         
