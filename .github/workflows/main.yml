@@ -13,5 +13,4 @@ jobs:
       - name: Pull from Git repository
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}
-          ls
-          git pull
+          pwd
