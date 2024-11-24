@@ -1,14 +1,16 @@
 {
   "name": "framework-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A boilerplate for Webpack with SCSS and TypeScript.",
   "main": "index.js",
   "scripts": {
-    "watch:scss": "sass --watch private/scss/style.scss  ./public/css/main.css",
-    "watch:ts": "tsc -w",
+    "start": "concurrently \"npm run php-server\" \"npm run webpack-watch\"",
+    "php-server": "php -S localhost:8000 -t public",
+    "webpack-watch": "webpack --watch",
+    "build": "webpack",
+
     "test": "snyk test",
-    "monitor": "snyk monitor",
-    "pack": "webpack"
+    "monitor": "snyk monitor"
   },
   "repository": {
     "type": "git",
@@ -20,18 +22,24 @@
   "bugs": {
     "url": "https://github.com/jarivankaam/framework-boilerplate/issues"
   },
-  "homepage": "https://github.com/jarivankaam/framework-boilerplate#readme",
+  "homepage": "https://github.com/jarivankaam/framework-boilerplate",
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
-    "cssnano": "^5.1.14",
-    "node-sass": "^8.0.0",
+    "mini-css-extract-plugin": "^2.9.2",
     "postcss-loader": "^7.0.2",
-    "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "snyk": "^1.1085.0",
     "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
     "typescript": "^4.9.4",
-    "webpack-cli": "^5.0.1"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "sass": "^1.81.0"
   }
 }
