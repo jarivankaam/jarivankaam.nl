@@ -1577,6 +1577,10 @@ body {
   align-items: center;
 }
 
+.title-wrapper, .nav-wrapper {
+  height: 100%;
+}
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
