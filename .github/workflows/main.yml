@@ -10,7 +10,12 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass
 
-      - name: Pull from Git repository
+      - name: connect ssh
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}
+          exit
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER }}
+      - name: ls:
+        run:
           ls
+        
