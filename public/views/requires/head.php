@@ -3,8 +3,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kan je niet beslissen wat je wilt dragen? Kijk dan hier en zie wat je moet dragen gebasseerd op de buiten temperatuur!">
-    <meta name="keywords" content="Kleding, Temperatuur, typescript, html ">
     <meta name="author" content="Jari van Kaam">
     <meta property="og:image"  content="favicon.ico">
     <link rel="icon" href="favicon.ico"></link>
