@@ -1727,6 +1727,10 @@ footer {
   justify-content: center;
   height: 50px;
 }
+footer p {
+  font-size: 18px;
+  margin: 0;
+}
 
 .swiper-container {
   margin-left: auto;
