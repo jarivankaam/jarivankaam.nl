@@ -1733,6 +1733,10 @@ footer p {
   font-family: "Space Grotesk", serif;
 }
 
+.heading h2 {
+  font-size: 48px;
+}
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;

@@ -3,33 +3,11 @@
 <?php require_once 'requires/header.php'; ?>
 
 <body>
-
-  <section class="section-hero-image">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-5 flex flex-column align-items-center">
-          <div class="image-wrapper">
-            <img class="big" src="/public/images/d891ab00-e1a8-4a6f-8f98-de113c4945b2.jpg" alt="Jari van kaam">
-            <img class="small mobile-hide" src="/public/images/IMG_2127.jpg" alt="Jari van kaam">
-          </div>
-          <div class="image-wrapper desktop-hide">
-          <img class="small" src="/public/images/IMG_2127.jpg" alt="Jari van kaam">
-          </div>
-          <div class="addendum">
-            <h2>Informatica <strong>student</strong> <br><strong>front-end</strong> developer</h2>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-7">
-          <div class="content-wrapper flex flex-column justify-content-center full-height">
-            <h2>Fast results, Deep research</h2>
-            <p>I'am Jari van kaam a informatica student and a front-end developer with 1 year of experience in the field.</p>
-            <p>I create designs, backend-solutions and beatifull front-end creations based on the needs of the customer..</p>
-            <p>Having worked as a full-stack developer i got enough knowledge to work on developer level even while still being a student.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="heading"><div class="container">
+    
+      <h2>My cases</h2>
+  </div>
+  </div>
   <section class="section-projects">
     <div class="container">
       <div class="row">
