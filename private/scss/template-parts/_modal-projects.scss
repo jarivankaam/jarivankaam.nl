@@ -1,6 +1,6 @@
 .section-projects {
     .modal-project {
-        max-height: 533px;
+       
         height: 100%;
         overflow: hidden;
         background-color: white;
@@ -8,6 +8,9 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
         padding: 44px 20px;
         border-radius: 20px;
+        @media screen and (min-width: 1201px) {
+            max-height: 533px;
+        }
 
         .title {
             margin-bottom: 30px;
@@ -39,6 +42,11 @@
             }
 
             position: relative;
+
+            @media screen and (max-width: 1201px) {
+                margin-bottom: 10px;
+            }
+
             .title-wrapper {
                 position: absolute;
                 color: white;
@@ -47,7 +55,9 @@
                 height: unset;
                 padding: 15px;
                 transition: .3s;
-                top: auto;
+                top: unset;
+                flex-direction: column;
+                align-items: unset;
             }
             &::after {
                 content: '';
@@ -75,8 +85,6 @@
                     opacity: 1;
                     bottom: 10px;
                     transition: .3s;
-                    
-
                 }
             }
         }

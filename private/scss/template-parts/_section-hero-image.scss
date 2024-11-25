@@ -1,0 +1,60 @@
+.section-hero-image {
+    margin-bottom: 100px;
+    
+        .image-wrapper {
+           
+            position: relative;
+            @media screen and (max-width: 991px) {
+                max-width: 100%;
+                width: 100%;
+                img {
+                    height: 300px !important;
+                    margin-bottom: 10px;
+                }
+            }
+            @media screen and (min-width: 991px) {
+                max-height: 466px;
+                height: 466px;
+                width: 100%;
+                max-width: 254px;
+            }
+            .big {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 50px;
+               
+            }
+            .small {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 50px;
+                @media screen and (min-width: 991px) {
+                    position: absolute;
+                    right: -29px;
+                    bottom: 25px;
+                    max-width: 160px;
+                    max-height: 278px;
+                }
+            }
+        }
+    
+
+    .content-wrapper {
+        h2 {
+            font-size: 48px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .addendum {
+        margin-top: 10px;
+        h2,p {
+            font-size: 36px;
+        }
+    }
+}

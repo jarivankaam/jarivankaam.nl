@@ -1278,3 +1278,13 @@ html {
     }
   }
   
+  @media screen and (max-width: 991px) {
+    .mobile-hide {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    .desktop-hide {
+      display: none;
+    }
+  }

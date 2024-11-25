@@ -8,7 +8,6 @@
     "php-server": "php -S localhost:8000 -t public",
     "webpack-watch": "webpack --watch",
     "build": "webpack",
-
     "test": "snyk test",
     "monitor": "snyk monitor"
   },
@@ -24,6 +23,7 @@
   },
   "homepage": "https://github.com/jarivankaam/framework-boilerplate",
   "devDependencies": {
+    "@types/jquery": "^3.5.32",
     "@types/node": "^18.11.18",
     "concurrently": "^9.1.0",
     "cross-env": "^7.0.3",
@@ -40,6 +40,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "sass": "^1.81.0"
   }
 }
